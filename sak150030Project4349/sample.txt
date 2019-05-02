@@ -1,0 +1,7 @@
+1) Discuss two problems in fixed partitioning.
+Fixed partitioning in memory causes internal fragmentation due to memory utilization being poor since a small program can occupy a large partition. Conversely the program can be too large for the partition and the program must make use of overlays to load pieces of the program into memory. Those pieces of the program can then face the same problems as the larger program. Overall fixed partitioning wastes memory space and is inefficient.
+
+2) Explain how relative addressing supports relocation.
+Since relative addressing uses a logical address relative to a known point in the program, usually the beginning, it is able to support the relocation of a program to different parts of memory since the program isn't dependent on any one absolute location in memory. The ability to access any part of the program using an offset from the beginning of the program allows relative addressing to support relocating the same program to different parts of memory.
+
+3) Given a 32 Megabyte memory space and the following requests, illustrate the final memory configuration after the following requests are made using the Buddy System.  Use a rule of first allocating the left block of a split pair.
